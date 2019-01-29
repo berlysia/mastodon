@@ -75,8 +75,8 @@ class Avatar extends ImmutablePureComponent {
 
 }
 
-export default @injectIntl
-class Header extends ImmutablePureComponent {
+@injectIntl
+export default class Header extends ImmutablePureComponent {
 
   static propTypes = {
     account: ImmutablePropTypes.map,

@@ -19,9 +19,9 @@ const mapStateToProps = state => ({
   isPartial: state.getIn(['timelines', 'home', 'items', 0], null) === null,
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class HomeTimeline extends React.PureComponent {
+export default class HomeTimeline extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,

@@ -179,9 +179,9 @@ const mapStateToProps = state => ({
   github_url: state.getIn(['meta', 'github_url']),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class OnboardingModal extends React.PureComponent {
+export default class OnboardingModal extends React.PureComponent {
 
   static propTypes = {
     onClose: PropTypes.func.isRequired,

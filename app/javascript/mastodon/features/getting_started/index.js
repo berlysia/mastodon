@@ -56,9 +56,9 @@ const badgeDisplay = (number, limit) => {
   }
 };
 
-export default @connect(mapStateToProps, mapDispatchToProps)
+@connect(mapStateToProps, mapDispatchToProps)
 @injectIntl
-class GettingStarted extends ImmutablePureComponent {
+export default class GettingStarted extends ImmutablePureComponent {
 
   static propTypes = {
     intl: PropTypes.object.isRequired,

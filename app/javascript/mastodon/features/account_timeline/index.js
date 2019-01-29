@@ -23,8 +23,8 @@ const mapStateToProps = (state, { params: { accountId }, withReplies = false }) 
   };
 };
 
-export default @connect(mapStateToProps)
-class AccountTimeline extends ImmutablePureComponent {
+@connect(mapStateToProps)
+export default class AccountTimeline extends ImmutablePureComponent {
 
   static propTypes = {
     params: PropTypes.object.isRequired,

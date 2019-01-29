@@ -15,8 +15,8 @@ const mapStateToProps = (state, props) => ({
   accountIds: state.getIn(['user_lists', 'reblogged_by', props.params.statusId]),
 });
 
-export default @connect(mapStateToProps)
-class Reblogs extends ImmutablePureComponent {
+@connect(mapStateToProps)
+export default class Reblogs extends ImmutablePureComponent {
 
   static propTypes = {
     params: PropTypes.object.isRequired,

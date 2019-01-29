@@ -11,8 +11,8 @@ const messages = defineMessages({
   description: { id: 'upload_form.description', defaultMessage: 'Describe for the visually impaired' },
 });
 
-export default @injectIntl
-class Upload extends ImmutablePureComponent {
+@injectIntl
+export default class Upload extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

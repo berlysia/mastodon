@@ -21,9 +21,9 @@ const mapStateToProps = state => ({
   domains: state.getIn(['domain_lists', 'blocks', 'items']),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class Blocks extends ImmutablePureComponent {
+export default class Blocks extends ImmutablePureComponent {
 
   static propTypes = {
     params: PropTypes.object.isRequired,

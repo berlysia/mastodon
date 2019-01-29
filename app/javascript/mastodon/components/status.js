@@ -45,8 +45,8 @@ export const textForScreenReader = (intl, status, rebloggedByText = false) => {
   return values.join(', ');
 };
 
-export default @injectIntl
-class Status extends ImmutablePureComponent {
+@injectIntl
+export default class Status extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

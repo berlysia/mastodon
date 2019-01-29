@@ -12,9 +12,9 @@ const messages = defineMessages({
   title: { id: 'standalone.public_title', defaultMessage: 'A look inside...' },
 });
 
-export default @connect()
+@connect()
 @injectIntl
-class CommunityTimeline extends React.PureComponent {
+export default class CommunityTimeline extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,

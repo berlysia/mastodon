@@ -22,8 +22,8 @@ const mapStateToProps = (state, props) => ({
   hasMore: !!state.getIn(['user_lists', 'followers', props.params.accountId, 'next']),
 });
 
-export default @connect(mapStateToProps)
-class Followers extends ImmutablePureComponent {
+@connect(mapStateToProps)
+export default class Followers extends ImmutablePureComponent {
 
   static propTypes = {
     params: PropTypes.object.isRequired,

@@ -28,8 +28,8 @@ const messages = defineMessages({
   embed: { id: 'status.embed', defaultMessage: 'Embed' },
 });
 
-export default @injectIntl
-class ActionBar extends React.PureComponent {
+@injectIntl
+export default class ActionBar extends React.PureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

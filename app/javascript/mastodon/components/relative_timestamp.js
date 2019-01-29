@@ -86,8 +86,8 @@ export const timeAgoString = (intl, date, now, year) => {
   return relativeTime;
 };
 
-export default @injectIntl
-class RelativeTimestamp extends React.Component {
+@injectIntl
+export default class RelativeTimestamp extends React.Component {
 
   static propTypes = {
     intl: PropTypes.object.isRequired,
