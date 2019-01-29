@@ -21,13 +21,18 @@ plugins:
 parserOptions:
   sourceType: module
   ecmaFeatures:
+    legacyDecorators: true
     experimentalObjectRestSpread: true
     jsx: true
   ecmaVersion: 2018
 
 settings:
-  import/extensions:
-  - .js
+  import/resolver:
+    node:
+      extensions:
+        - .js
+        - .ts
+        - .tsx
   import/ignore:
   - node_modules
   - \\.(css|scss|json)$
@@ -156,7 +161,10 @@ rules:
   import/extensions:
   - error
   - always
-  - js: never
+  -
+    js: never
+    ts: never
+    tsx: never
   import/newline-after-import: error
   import/no-extraneous-dependencies:
   - error
